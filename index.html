@@ -1,11 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shobha Ganesh - Web Developer</title>
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/d0c1329637.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="./Assets/CSS/reset.css" />
+    <!-- Normal CSS -->
+    <link rel="stylesheet" href="./Assets/CSS/styles.css" />
+    <!-- Responsivness -->
+    <link rel="stylesheet" href="./Assets/CSS/responsivness.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <a href="#home">
+          <p>Shobha<span>Ganesh</span></p>
+        </a>
+      </div>
+      <nav>
+        <ul class="navigation-links">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="./Assets/resume.html">Resume</a></li>
+        </ul>
+      </nav>
+
+      <label for="toggle-menu" class="navigation-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <!-- landing page section -->
+
+      <section id="home" class="landing-page">
+        <div>
+          <h1>
+            Elevating <span class="landing-page-title">Websites </span>with
+            Innovation and Imagination !
+          </h1>
+        </div>
+        <!-- end landing page -->
+      </section>
+
+      <!-- separation space -->
+      <section>
+        <div class="separation-space"></div>
+      </section>
+
+      <!-- About me section -->
+
+      <section id="about-me">
+        <div class="section-content">
+          <div class="section-title">
+            <h2>About Me</h2>
+          </div>
+
+          <div class="separation-line"></div>
+
+          <div class="about-me-paragraph">
+            <p>
+              I'm Shobha Ganesh, a passionate front-end developer and have also
+              worked as Site Reliable Engineer with 17 years of experience with
+              TATA CONSULTANCY SERVICES
+            </p>
+
+            <p>
+              I'm here to collaborate the ideas and requirements of Business and
+              in the digital space.
+            </p>
+          </div>
+        </div>
+
+        <!-- End of Section About me -->
+      </section>
+
+      <!-- separation space -->
+
+      <section>
+        <div class="separation-space"></div>
+      </section>
+
+      <!-- Work section -->
+
+      <section id="work">
+        <div class="section-content">
+          <div class="work-title">
+            <h2>Work</h2>
+          </div>
+          <div class="separation-line"></div>
+          <div class="work-content">
+            <div class="float-right">
+              <a href=""
+                ><img
+                  src="./Assets/Images/digital-marketing-meeting.jpg"
+                  alt="Image of marketing team"
+                />
+                <div class="overlay"></div>
+                <h3>Marketing Agency</h3>
+              </a>
+            </div>
+
+            <div class="other-works">
+              <div class="other-works-section">
+                <div class="work1">
+                  <a href=""
+                    ><img
+                      src="./Assets/Images/Consultation.jpg"
+                      alt="image of consulting company"
+                    />
+                    <div class="overlay"></div>
+                    <h3>Consulting Business</h3>
+                  </a>
+                </div>
+                <div class="work2">
+                  <a href=""
+                    ><img
+                      src="./Assets/Images/red-wall.jpg"
+                      alt="image of the red wall"
+                    />
+                    <div class="overlay"></div>
+                    <h3>Red wall</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="other-works-section">
+                <div class="work3">
+                  <a href=""
+                    ><img
+                      src="./Assets/Images/Calculator.jpg"
+                      alt="Image of the calculator"
+                    />
+                    <div class="overlay"></div>
+                    <h3>Calculator</h3>
+                  </a>
+                </div>
+
+                <div class="work4">
+                  <a href=""
+                    ><img
+                      src="./Assets/Images/code.jpg"
+                      alt="image of the codes"
+                    />
+                    <div class="overlay"></div>
+                    <h3>Pastel Puzzels</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End of section -->
+      </section>
+
+      <!-- Separation space -->
+
+      <section>
+        <div class="separation-space"></div>
+      </section>
+
+      <!-- CONTACT FORM -->
+
+      <section id="contact">
+        <div class="contact-form">
+          <div class="contact-title">
+            <h2>Contact me</h2>
+          </div>
+          <div class="separation-line"></div>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input class="button" type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="socials">
+          <a href="tel:+14807692153"
+            ><p>
+              <i class="fa-solid fa-phone-volume"></i> : +1 (480) 769 - 2153
+            </p></a
+          >
+          <a href="mailto:sgforcert@gmail.com"
+            ><p><i class="fa-solid fa-envelope"></i>: sgforcert@gmail.com</p></a
+          >
+          <a href="https://github.com/sgforcert"
+            ><p><i class="fa-brands fa-github"></i>: sgforcert/p></p></a
+          >
+
+          <a href="linkedin.com/in/shobha-g-187bb2287"
+            ><p><i class="fa-brands fa-linkedin"></i>: Shobha Ganesh</p></a
+          >
+        </div>
+
+        <!-- END CONTACT -->
+      </section>
+
+      <!-- END MAIN -->
+    </main>
+
+    <div class="separation-space"></div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div>
+        <ul class="navigation-links down">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="./assets/resume.html">Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-name">
+        <p>Shobha Ganesh 2024</p>
+        <p>All rights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,505 @@
+:root{
+    --background: #292929;
+    --secondary-background: #9ecbcc;
+    --text-color:#FFD700;
+
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+p{
+    font-size: 1.3rem;
+    display: block;
+    font-family: sens-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#292929;
+    
+
+}
+
+h2{
+    font-size: 2rem;
+    text-wrap: nowrap;
+    font-family: sans-serif;
+}
+
+h3 {text-align: center;
+   margin-top: 25px;
+   font-size: 1.5rem;
+   font-family: sans-serif;
+   text-wrap: nowrap;
+
+
+}
+
+nav{
+    display: flex;
+}
+
+
+label,input,textarea {
+    margin: 10px 10px 30px 30px;
+    width: 100%;
+    font-family: sans-serif;
+    
+    
+    
+
+}
+
+input:hover,textarea:hover{
+    box-shadow:5px 5px 10px 0 var(--text-color);
+}
+
+textarea{
+    height: 100px;
+}
+
+footer div{
+position: relative;
+}
+
+
+
+
+
+
+
+
+.logo{
+    background-color: var(--secondary-background);
+    
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    
+    
+
+}
+
+
+
+.logo a{
+    text-decoration: none;
+    color: #292929;
+    
+    
+}
+
+
+
+.logo p{
+    position: relative;
+    top:30%;
+    
+    
+   
+}
+
+.logo p span{
+    
+    font-size:1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* Navigation menu styling */
+
+.navigation-links {
+    display: flex;
+    justify-content:center;
+    gap:20px;
+    padding-right:30px;
+}
+
+.navigation-links a{
+    color:white;
+    text-decoration: none;
+    font-size:1.5rem;
+    font-family: sans-serif;
+    position: relative;
+   
+
+}
+
+.navigation-links a::after {
+    content: ""; 
+    position: absolute; 
+    top:30px;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: var(--text-color); 
+    transition: width 0.3s ease; 
+    opacity: 0; 
+    
+}
+
+    .navigation-links a:hover::after {
+    width: 100%; 
+    opacity: 1; 
+    
+}
+
+.navigation-menu{
+    display: block;
+    color: var(--text-color);
+    cursor:pointer;
+    position: relative;
+    display: none;
+}
+
+.navigation-menu span{
+     height: 5px;
+     width: 30px;
+    background-color: var(--text-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+
+/* landing page styling */
+.landing-page div{
+    background-image: url(/Assets/Images/Background-image.jpg);
+    background-color: var(--background); 
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+
+}
+
+
+.landing-page h1{
+color: white;
+font-size: 4rem;
+ font-family: sans-serif;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ display: inline;
+}
+
+.landing-page-title{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+
+
+/* about me styiling */
+
+#about-me, #work, #contact, footer{
+    height: auto;
+    width: 100%;
+}
+
+
+.section-content{
+    display: flex;
+    gap:80px;
+    align-items: center;
+    margin: 40px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@keyframes line{
+    0% {opacity: 0;}
+    25% {background-color: var(--background); bottom: 0px; top: 100px;}
+    50% {background-color: var(--text-color); bottom: 100px; top: 100px;}
+    75% {background-color: var(--background); bottom: 0; top: 100px;}
+    100% {background-color: var(--text-color); bottom: 0px; top: 0px;}
+}
+
+
+.separation-line{
+   width: 10px;
+   
+   height: 90px;
+   background-color:var(--text-color);
+   animation: line 4s infinite;
+
+   
+}
+
+.about-me-paragraph{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+   align-items: center;
+   margin: 0  20px 0px 20px;
+}
+
+.separation-space{
+    width: 100%;
+    height: 10px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/* Work Styling */
+
+.work-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    align-items: center;
+}
+
+.float-right{
+    width: 900px;
+    height: 300px;
+    background-color: var(--background);
+    position: relative;
+}
+    
+.other-works{
+    display: flex;
+    gap: 20px;
+
+}
+
+.other-works-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.work1{
+     width: 440px;
+    height: 120px;
+    background-color: #FFD700;
+    position: relative;
+}
+
+.work2{
+    width: 440px;
+    height: 120px;
+    background-color:cornflowerblue;
+    position: relative;
+}
+.work3{
+     width: 440px;
+    height: 120px;
+    background-color:khaki;
+position: relative;
+}
+
+.work4{
+      width: 440px;
+    height: 120px;
+    background-color:mediumblue;
+    position: relative;
+
+}
+
+.float-right img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: top bottom;
+}
+
+.float-right h3{
+    position:absolute;
+    width: 300px;
+    height: 40px;
+    background-color: white;;
+    top: 50%;
+    left:0;
+    padding-top:2%;
+    
+}
+
+.work1 img{
+   position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.work1 h3 {
+    position:absolute;
+    width: 300px;
+    height: 30px;
+    background-color: white;;
+    top: 25%;
+    left:0;
+}
+
+.work2 img{
+   position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.work2 h3 {
+    position:absolute;
+    width: 300px;
+    height: 30px;
+    background-color: white;;
+    top: 25%;
+    left:0;
+}
+
+.work3 img{
+   position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.work3 h3 {
+    position:absolute;
+    width: 300px;
+    height: 30px;
+    background-color: white;;
+    top: 25%;
+    left:0;
+}
+
+.work4 img{
+   position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.work4 h3 {
+    position:absolute;
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    top: 25%;
+    left:0;
+}
+
+.overlay{
+    background-color: var(--text-color);
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: center bottom;
+    opacity:0.7;
+    display: none;
+
+}
+
+
+
+.float-right:hover, .work1:hover, .work2:hover, .work3:hover, .work4:hover{
+    .overlay{
+        display: block;
+    }
+
+}
+    
+
+    /* Contact page styling */
+
+    .contact-form{
+         display: flex;
+    gap:80px;
+    align-items: center;
+    margin: 40px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    }
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+.button{
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.button:hover{
+    background-color: var(--text-color);
+    color: var(--background);
+}
+
+.socials{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    margin: 25px;
+    justify-content: flex-end;
+    
+}
+
+
+/* footer styling */
+
+
+footer{
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.down{
+    flex-direction: column;
+      margin: 40px;
+}
+
+.down a{
+    font-size: 1.1rem;
+
+}
+.footer-name{
+    color: white;
+    display: flex;
+    gap: 30px;
+}

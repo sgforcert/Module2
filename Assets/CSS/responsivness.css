@@ -1,0 +1,183 @@
+
+
+ @media screen and (max-width: 786px) {
+    .logo{
+        width: 80px;
+    }
+
+     p > span{
+       font-size: small;
+       display: none;
+
+     }
+
+
+    header{ 
+        height: auto;
+        gap:170px
+    }
+    .navigation-links{
+        flex-direction: column;
+        background-color: var(--background);
+        padding:20px;
+        margin-right: 30px;
+          
+    }
+
+    nav{
+        display: none;
+    }
+    .navigation-links a{
+        color:white;
+    }
+
+    .navigation-menu{
+        display: block;
+    
+    }
+
+    .navigation-menu:hover nav {
+        display: block;
+    }
+
+    .landing-page h1{
+        font-size: 2rem;
+        top:50%;
+        left:30%;
+        
+    } 
+    
+    .section-content{
+        flex-direction: column;
+        gap:25px;
+        padding: 40px;
+
+    }
+
+    .separation-line{
+   width: 80px;
+   height: 5px;
+   background-color:var(--text-color);
+   animation: line 4s infinite;
+
+   
+}
+.other-works, .contact-form {
+    flex-direction: column;
+    gap:20px;
+    
+}
+.other-works-section{
+    width: 100%;
+    height: auto;
+    background-color: var(--background);
+}
+
+.work1, .work2 , .work3 , .work4{
+     width: 900px;
+    height: 300px;
+    
+}
+
+.float-right h3, .work1 h3,.work2 h3,.work3 h3,.work4 h3{
+    top:50%;
+    left:50%;
+}
+
+
+
+
+.down{
+    display: none;
+}
+
+
+.socials a p {
+    font-size: 10px;
+    padding: 10px;
+}
+
+.footer-name{
+    
+    
+    gap: 10px;
+    margin: 20px;
+    padding:20px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 886px){
+    .landing-page h1{
+        margin-bottom: 40px;
+        font-size: 2rem;
+        right:30px;
+
+    }
+    
+}
+
+
+
+
+
+    
+
+
+
+
+
+/* @media screen and (max-width:1124px){
+    .landing-page h1{
+        top: 80px;
+    }
+        p{
+            font-size: 1.6rem;
+        }
+    
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+    /* #about-me{
+        height: 800px;;
+    }
+
+    .section-content{
+        flex-direction: column;
+        
+        
+    } */
+
+
+/* .separation-line{
+   width: 100px;
+    height: 8px;
+    
+    } */
+
+
+}
+  */
